@@ -302,3 +302,65 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
 }
+
+.tariff {
+  max-width: 1440px;
+}
+
+.tariff-container {
+}
+
+.tariff-title {
+  padding-top: 100px;
+  padding-bottom: 45px;
+  color: var(--1, #2e363e);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.33; /* 47.88px */
+}
+
+.tariff-list {
+  max-width: 1170px;
+  display: block;
+}
+
+.tariff-item {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 85px;
+  margin-bottom: 41px;
+  border-radius: 10px;
+  background: #e3f2f9;
+  box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.tariff-img {
+}
+
+.tariff-item-content {
+  display: block;
+}
+
+.tariff-name {
+}
+
+.tariff-cost {
+}
+
+.tariff-motto {
+}
+
+.tariff-speed {
+}
+
+.tariff-about {
+}
+
+.tariff-button {
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+}
