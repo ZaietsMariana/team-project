@@ -4,110 +4,194 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tariffs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@900&family=Reem+Kufi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html">World.Net</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="">Reviews</a></li>
-          <li><a href="">Tarrifs</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <a href="tel:88006549732">8 (800) 654-97-32</a>
-      </address>
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">World.Net</a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Home</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#about">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Reviews</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./tariffs.html">Tarrifs</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <a class="header-address-link" href="tel:88006549732"
+            >8 (800) 654-97-32</a
+          >
+        </address>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Tariff offers</h1>
-        <ul>
-          <li>
-            <img
-              src="./images/standart.svg"
-              alt="standart"
-              width="372"
-              height="340"
-            />
-            <h2>Standart</h2>
-            <h3>$20/month</h3>
-            <p>The connection is always stable</p>
-            <p>Speed of 100 Mbit / s</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              scelerisque, neque eu pulvinar elementum, mauris nibh posuere
-              elit, id auctor lectus nibh eget arcu. Sed nec nunc eros. Duis eu
-              urna in risus pellentesque hendrerit eleifend vitae nisl. Integer
-              magna elit, consectetur eget leo sed, dapibus consequat erat.
-              Vivamus lorem eros, blandit sit amet mi convallis, rhoncus
-              pulvinar enim. Suspendisse tincidunt porttitor nunc, a porta nisi
-              condimentum ac. Nunc ultrices, tellus id varius cursus, tortor
-              diam sollicitudin quam, et placerat turpis risus id mi. Nunc
-              euismod posuere tristique. Morbi vehicula suscipit est. Vestibulum
-              ante ipsum primis in faucibus orci luctus et ultrices posuere
-              cubilia curae;
-            </p>
-            <button type="button">Make a request</button>
-          </li>
-          <li>
-            <img
-              src="./images/smart.svg"
-              alt="smart"
-              width="372"
-              height="340"
-            />
-            <h2>Smart</h2>
-            <h3>$30/month</h3>
-            <p>Service without weekends</p>
-            <p>Speed of 300 Mbit / s</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              scelerisque, neque eu pulvinar elementum, mauris nibh posuere
-              elit, id auctor lectus nibh eget arcu. Sed nec nunc eros. Duis eu
-              urna in risus pellentesque hendrerit eleifend vitae nisl. Integer
-              magna elit, consectetur eget leo sed, dapibus consequat erat.
-              Vivamus lorem eros, blandit sit amet mi convallis, rhoncus
-              pulvinar enim. Suspendisse tincidunt porttitor nunc, a porta nisi
-              condimentum ac. Nunc ultrices, tellus id varius cursus, tortor
-              diam sollicitudin quam, et placerat turpis risus id mi. Nunc
-              euismod posuere tristique. Morbi vehicula suscipit est. Vestibulum
-              ante ipsum primis in faucibus orci luctus et ultrices posuere
-              cubilia curae;
-            </p>
-            <button type="button">Make a request</button>
-          </li>
-          <li>
-            <img
-              src="./images/prime.svg"
-              alt="prime"
-              width="372"
-              height="340"
-            />
-            <h2>Prime</h2>
-            <h3>$40/month</h3>
-            <p>New modern fiber optic network</p>
-            <p>Speed of 1000 Mbit / s</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              scelerisque, neque eu pulvinar elementum, mauris nibh posuere
-              elit, id auctor lectus nibh eget arcu. Sed nec nunc eros. Duis eu
-              urna in risus pellentesque hendrerit eleifend vitae nisl. Integer
-              magna elit, consectetur eget leo sed, dapibus consequat erat.
-              Vivamus lorem eros, blandit sit amet mi convallis, rhoncus
-              pulvinar enim. Suspendisse tincidunt porttitor nunc, a porta nisi
-              condimentum ac. Nunc ultrices, tellus id varius cursus, tortor
-              diam sollicitudin quam, et placerat turpis risus id mi. Nunc
-              euismod posuere tristique. Morbi vehicula suscipit est. Vestibulum
-              ante ipsum primis in faucibus orci luctus et ultrices posuere
-              cubilia curae;
-            </p>
-            <button type="button">Make a request</button>
-          </li>
-        </ul>
+      <!-- Tariff -->
+
+      <section class="tariff">
+        <div class="container tariff-container">
+          <h1 class="tariff-title">Tariff offers</h1>
+          <ul class="tariff-list">
+            <li class="tariff-item">
+              <img
+                src="./images/standart.svg"
+                alt="standart"
+                width="372"
+                height="340"
+                class="tariff-img"
+              />
+              <div class="tariff-item-content">
+                <h2 class="tariff-name">Standart</h2>
+                <h3 class="tariff-cost">$20/month</h3>
+                <p class="tariff-motto">The connection is always stable</p>
+                <p class="tariff-speed">Speed of 100 Mbit / s</p>
+                <p class="tariff-about">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent scelerisque, neque eu pulvinar elementum, mauris nibh
+                  posuere elit, id auctor lectus nibh eget arcu. Sed nec nunc
+                  eros. Duis eu urna in risus pellentesque hendrerit eleifend
+                  vitae nisl. Integer magna elit, consectetur eget leo sed,
+                  dapibus consequat erat. Vivamus lorem eros, blandit sit amet
+                  mi convallis, rhoncus pulvinar enim. Suspendisse tincidunt
+                  porttitor nunc, a porta nisi condimentum ac. Nunc ultrices,
+                  tellus id varius cursus, tortor diam sollicitudin quam, et
+                  placerat turpis risus id mi. Nunc euismod posuere tristique.
+                  Morbi vehicula suscipit est. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia curae;
+                </p>
+                <button class="tariff-button" type="button">
+                  Make a request
+                </button>
+              </div>
+            </li>
+            <li class="tariff-item">
+              <img
+                src="./images/smart.svg"
+                alt="smart"
+                width="372"
+                height="340"
+                class="tariff-img"
+              />
+              <div class="tariff-item-content">
+                <h2 class="tariff-name">Smart</h2>
+                <h3 class="tariff-cost">$30/month</h3>
+                <p class="tariff-motto">Service without weekends</p>
+                <p class="tariff-speed">Speed of 300 Mbit / s</p>
+                <p class="tariff-about">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent scelerisque, neque eu pulvinar elementum, mauris nibh
+                  posuere elit, id auctor lectus nibh eget arcu. Sed nec nunc
+                  eros. Duis eu urna in risus pellentesque hendrerit eleifend
+                  vitae nisl. Integer magna elit, consectetur eget leo sed,
+                  dapibus consequat erat. Vivamus lorem eros, blandit sit amet
+                  mi convallis, rhoncus pulvinar enim. Suspendisse tincidunt
+                  porttitor nunc, a porta nisi condimentum ac. Nunc ultrices,
+                  tellus id varius cursus, tortor diam sollicitudin quam, et
+                  placerat turpis risus id mi. Nunc euismod posuere tristique.
+                  Morbi vehicula suscipit est. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia curae;
+                </p>
+                <button class="tariff-button" type="button">
+                  Make a request
+                </button>
+              </div>
+            </li>
+            <li class="tariff-item">
+              <img
+                src="./images/prime.svg"
+                alt="prime"
+                width="372"
+                height="340"
+                class="tariff-img"
+              />
+              <div class="tariff-item-content">
+                <h2 class="tariff-name">Prime</h2>
+                <h3 class="tariff-cost">$40/month</h3>
+                <p class="tariff-motto">New modern fiber optic network</p>
+                <p class="tariff-speed">Speed of 1000 Mbit / s</p>
+                <p class="tariff-about">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent scelerisque, neque eu pulvinar elementum, mauris nibh
+                  posuere elit, id auctor lectus nibh eget arcu. Sed nec nunc
+                  eros. Duis eu urna in risus pellentesque hendrerit eleifend
+                  vitae nisl. Integer magna elit, consectetur eget leo sed,
+                  dapibus consequat erat. Vivamus lorem eros, blandit sit amet
+                  mi convallis, rhoncus pulvinar enim. Suspendisse tincidunt
+                  porttitor nunc, a porta nisi condimentum ac. Nunc ultrices,
+                  tellus id varius cursus, tortor diam sollicitudin quam, et
+                  placerat turpis risus id mi. Nunc euismod posuere tristique.
+                  Morbi vehicula suscipit est. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia curae;
+                </p>
+                <button class="tariff-button" type="button">
+                  Make a request
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="./index.html">World.Net</a>
+        <ul>
+          <li>
+            <a href="" target="_blank" aria-label="instagram link"
+              ><img
+                src="./images/instagram.svg"
+                alt="instagram icon"
+                width="40"
+                height="39"
+            /></a>
+          </li>
+          <li>
+            <a href="" target="_blank" aria-label="facebook link"
+              ><img
+                src="./images/facebook.svg"
+                alt="facebook icon"
+                width="40"
+                height="39"
+            /></a>
+          </li>
+          <li>
+            <a href="" target="_blank" aria-label="whatsapp link"
+              ><img
+                src="./images/whatsapp.svg"
+                alt="whatsapp icon"
+                width="40"
+                height="39"
+            /></a>
+          </li>
+        </ul>
+        <address>
+          <a href="tel:+88006549732">8 (800) 654-97-32</a>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>
