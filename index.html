@@ -9,14 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@900&family=Reem+Kufi&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -51,19 +49,27 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Reliable Home Internet and TV Provider</h1>
-        <p>
-          We work only in small towns. Thanks to this, we maintain quality and
-          we will not spray
-        </p>
-        <button type="button">Submit your application</button>
-        <img
-          src="./images/hero-img.svg"
-          alt="hero-img"
-          width="572"
-          height="560"
-        />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <h1 class="hero-title">Reliable Home Internet and TV Provider</h1>
+            <p class="hero-text">
+              We work only in small towns. Thanks to this, we maintain quality
+              and we will not spray
+            </p>
+            <button type="button" data-modal-open class="hero-btn">
+              Submit your application
+            </button>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              class="hero-image"
+              src="./images/hero-img.svg"
+              alt="hero-img"
+              width="572"
+              height="560" />
+          </div>
+        </div>
       </section>
       <section id="about">
         <h2>Why choose our company</h2>
@@ -81,8 +87,7 @@
               src="./images/install.svg"
               alt="install"
               width="70"
-              height="70"
-            />
+              height="70" />
             <h3>Installation</h3>
             <p>
               We carefully mount the cable, without damaging the interior of
@@ -94,8 +99,7 @@
               src="./images/support.svg"
               alt="support"
               width="70"
-              height="70"
-            />
+              height="70" />
             <h3>Support</h3>
             <p>
               Round-the-clock help in the application or via the hotline, even
@@ -109,8 +113,7 @@
           src="./images/connect-today.png"
           alt="We will connect today"
           width="544"
-          height="525"
-        />
+          height="525" />
         <h2>We will connect today or next day</h2>
         <p>
           Our coverage area is much smaller than that of large providers. This
@@ -140,8 +143,7 @@
               src="./images/customer-icon.svg"
               alt="Simple blue image of the person with one star"
               width="47"
-              height="48"
-            />
+              height="48" />
             <h3>Name Here</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
@@ -153,8 +155,7 @@
               src="./images/customer-icon.svg"
               alt="Simple blue image of the person with one star"
               width="47"
-              height="48"
-            />
+              height="48" />
             <h3>Name Here</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
@@ -166,8 +167,7 @@
               src="./images/customer-icon.svg"
               alt="Simple blue image of the person with one star"
               width="47"
-              height="48"
-            />
+              height="48" />
             <h3>Name Here</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
@@ -244,5 +244,47 @@
         <a href="tel:+88006549732">8 (800) 654-97-32</a>
       </address>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close type="button"></button>
+        <p class="modal-subtitle">Contact Us</p>
+        <p class="modal-title">
+          <span class="modal-title-part">Contact</span> Us & We Can Work
+          Together
+        </p>
+        <p class="modal-text">
+          Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+          enim id gravida pulvinar. Tristique consectetur mi curabitur congue
+          enim dignissim
+        </p>
+        <form class="modal-form">
+          <label class="modal-label" for="user-name"
+            ><input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your Name"
+              required /></label
+          ><label class="modal-label" for="user-email"
+            ><input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Your Email"
+              required /></label
+          ><label class="modal-label textarea" for="user-message">
+            <textarea
+              class="modal-message"
+              name="user-message"
+              id="user-message"
+              placeholder="Your Message"></textarea>
+          </label>
+          <button class="modal-submit-btn" type="submit">Submit Message</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
