@@ -1,4 +1,11 @@
 
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
 h1,
 h2,
 h3,
@@ -38,6 +45,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #FFFFFF;
     color: #2E363E;
+    
 }
 
 .container {
@@ -45,6 +53,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .header {
@@ -100,4 +109,97 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.52;
+}
+
+
+/* =========CUSTOMERS========= */
+
+.customers-section {
+    background-color: hsl(200, 52%, 32%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.customers-title {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.customers-title::before {
+    display: block;
+    content: '';
+    width: 143px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.customers-text {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #fff;
+    font-weight: 700;
+    max-width: 440px;
+    margin-bottom: 91px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 35px;
+    max-width: 1165px;
+}
+
+.customers-list-item {
+    max-width: calc((100% - 70px) / 3);
+    background-color: #fff;
+    position: relative;
+    padding: 69px 18px 38px 18px;
+    box-sizing: border-box;
+}
+
+.customers-list-icon {
+ fill: #022C40;
+}
+
+.customers-list-contsiner {
+    position: absolute;
+    border: 3px solid #022C40;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -41px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.customers-list-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 29px;
+}
+
+.customers-list-text {
+    font-size: 11px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #696969;
+    font-weight: 400;
 }
