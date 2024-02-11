@@ -1,12 +1,6 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
     box-sizing: border-box;
 }
 
@@ -54,7 +48,20 @@ body {
     
 }
 
-.container {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,7 +69,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
   color: #2e363e;
-}
+} */
 
 .container {
   width: 1200px;
@@ -475,3 +482,38 @@ body {
     color: #696969;
     font-weight: 400;
 }
+
+
+
+/* =======REQUEST======== */
+
+.request-title {}
+
+.request-text {}
+
+.request-form {}
+
+.request-agreement {}
+
+.visually-hidden {}
+
+.request-agreement-label {}
+
+.request-span {
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 2px;
+    fill: transparent;
+}
+
+.request-agreement:checked + .request-agreement-label > .request-span {
+    border: none;
+    background-color: #275F7A;
+    fill: #fff;
+}
+
+.request-icon {}

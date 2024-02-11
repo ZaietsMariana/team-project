@@ -9,12 +9,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@900&family=Reem+Kufi&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -67,7 +69,8 @@
               src="./images/hero-img.svg"
               alt="hero-img"
               width="572"
-              height="560" >
+              height="560"
+            />
           </div>
         </div>
       </section>
@@ -87,7 +90,8 @@
               src="./images/install.svg"
               alt="install"
               width="70"
-              height="70" />
+              height="70"
+            />
             <h3>Installation</h3>
             <p>
               We carefully mount the cable, without damaging the interior of
@@ -99,7 +103,8 @@
               src="./images/support.svg"
               alt="support"
               width="70"
-              height="70" />
+              height="70"
+            />
             <h3>Support</h3>
             <p>
               Round-the-clock help in the application or via the hotline, even
@@ -113,7 +118,8 @@
           src="./images/connect-today.png"
           alt="We will connect today"
           width="544"
-          height="525" />
+          height="525"
+        />
         <h2>We will connect today or next day</h2>
         <p>
           Our coverage area is much smaller than that of large providers. This
@@ -180,47 +186,6 @@
             </li>
           </ul>
         </div>
-      <section>
-        <h2>Customer Feedback</h2>
-        <p>What Our Customers Say About Us</p>
-        <ul>
-          <li>
-            <img
-              src="./images/customer-icon.svg"
-              alt="Simple blue image of the person with one star"
-              width="47"
-              height="48" />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/customer-icon.svg"
-              alt="Simple blue image of the person with one star"
-              width="47"
-              height="48" />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/customer-icon.svg"
-              alt="Simple blue image of the person with one star"
-              width="47"
-              height="48" />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-        </ul>
       </section>
 
       <section>
@@ -251,6 +216,46 @@
             <button type="button">Make a request</button>
           </li>
         </ul>
+      </section>
+
+      <!-- REQUEST -->
+      <section class="request">
+        <div class="container">
+          <h2 class="request-title">
+            Leave a request and our manager will contact you shortly
+          </h2>
+          <p class="request-text">
+            You will have the opportunity to discuss details and ask clarifying
+            questions
+          </p>
+          <form class="request-form">
+            <label
+              ><input
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+              /> </label
+            ><label><input type="text" name="name" placeholder="Name" /></label>
+            <button type="submit">Order calculation</button>
+            <div>
+              <input
+                class="request-agreement visually-hidden"
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+              />
+              <label class="request-agreement-label" for="agreement"
+                ><span class="request-span"
+                  ><svg class="request-icon" width="5" height="7">
+                    <use
+                      href="./images/symbol-defs.svg#icon-check"
+                    ></use></svg></span
+                >By clicking on the button, you agree to the
+                <a href=""> terms of processing personal data</a></label
+              >
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -325,7 +330,8 @@
               class="modal-message"
               name="user-message"
               id="user-message"
-              placeholder="Your Message"></textarea>
+              placeholder="Your Message"
+            ></textarea>
           </label>
           <button class="modal-submit-btn" type="submit">Submit Message</button>
         </form>
